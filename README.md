@@ -1,4 +1,4 @@
-# BOT ECO HOGAR 🌱
+# BOT ECO HOGAR
 
 Bot Eco Hogar está diseñado para adultos que desean comenzar a reducir
 los residuos que generan en casa y combatir la contaminación, pero no
