@@ -1,0 +1,43 @@
+import discord
+from discord.ext import commands
+import random
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+acciones = [
+    "Plantar un árbol en tu barrio o apoyar un programa de reforestación.",
+    "Reducir el consumo de plástico usando botellas o bolsas reutilizables.",
+    "Separar la basura en orgánica, reciclable y no reciclable.",
+    "Cerrar el caño mientras te cepillas los dientes para ahorrar agua.",
+    "Usar focos LED de bajo consumo.",
+    "Caminar, usar bicicleta o transporte público para reducir emisiones.",
+    "Reutilizar envases de vidrio y plástico en vez de desecharlos.",
+    "Evitar comprar productos con empaques innecesarios.",
+    "No arrojar aceite en el desagüe; guárdalo en una botella.",
+    "Desconectar cargadores o aparatos que no estés usando."
+]
+
+@bot.event
+async def on_ready():
+    print(f'Bot conectado como {bot.user}')
+
+@bot.command()
+async def eco(ctx):
+    accion = random.choice(acciones)
+    await ctx.send(f"Acción para ayudar al medio ambiente:\n{accion}")
+
+@bot.command()
+async def image(ctx):
+    with open('./images/1.png', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+@bot.command()
+async def image2(ctx):
+    with open('./images/2.png', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+bot.run('your token here')
