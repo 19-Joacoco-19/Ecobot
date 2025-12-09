@@ -8,7 +8,7 @@ diarios sostenidos en el tiempo.
 
 ---
 
-## ¿Qué hace este bot?
+# ¿Qué hace este bot?
 
 Bot Eco Hogar brinda orientación y sugerencias prácticas en cuatro
 aspectos principales:
@@ -24,21 +24,20 @@ conocimientos técnicos ni grandes inversiones.
 
 ---
 
-## Comandos Disponibles
+# Comandos Disponibles
 
-| Comando   | Descripción |
-|-----------|------------|
-| $ayuda      | Muestra todos los comandos y su propósito |
-| $reducir    | Consejos para reducir residuos en el hogar |
-| $energia    | Acciones para consumir menos electricidad |
-| $agua       | Estrategias para ahorrar agua |
-| $horario    | Indica la hora actual |
-| $imagen1    | Envía imagen informativa #1 |
-| $imagen2    | Envía imagen informativa #2 |
+ Comando      Descripción 
+ $ayuda       Muestra todos los comandos y su propósito 
+ $reducir     Consejos para reducir residuos en el hogar 
+ $energia     Acciones para consumir menos electricidad 
+ $agua        Estrategias para ahorrar agua 
+ $horario     Indica la hora actual 
+ $imagen1     Envía imagen informativa #1 
+ $imagen2     Envía imagen informativa #2 
 
 ---
 
-## Instalación
+# Instalación
 
 1. Instala **Python 3.8 o superior**
 
@@ -56,9 +55,9 @@ y reemplázala por tu token real de Discord.
 
 ---
 
-## Cómo modificar el bot
+# Cómo modificar el bot
 
-### Agregar nuevos consejos
+## Agregar nuevos consejos
 Dentro del archivo del bot encontrarás las listas:
 acciones_reduccion = [...]
 acciones_energia = [...]
@@ -66,13 +65,13 @@ acciones_agua = [...]
 Puedes añadir recomendaciones simplemente agregando texto dentro
 de estas listas.
 
-### Crear un nuevo comando personalizado
+## Crear un nuevo comando personalizado
 Debajo de los demás comandos añade:
 @bot.command()
 async def nuevocomando(ctx):
 await ctx.send("Mensaje personalizado")
 
-### Cambiar el prefijo del bot
+## Cambiar el prefijo del bot
 Modifica:
 command_prefix="$"
 por otro símbolo o palabra, ejemplo:
@@ -80,7 +79,7 @@ command_prefix="!"
 
 ---
 
-## Objetivo ambiental
+# Objetivo ambiental
 
 Bot Eco Hogar busca facilitar un cambio progresivo en los hogares,
 demostrando que pequeñas decisiones, repetidas de forma constante,
