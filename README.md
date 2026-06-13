@@ -88,3 +88,5 @@ impacto positivo en el planeta.
 
 Este bot es un punto de partida: comenzar es tan simple como un comando,
 y cada acción suma.
+
+Proyecto actualizado para la práctica de ramas.
